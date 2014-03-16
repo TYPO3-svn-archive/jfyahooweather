@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "jfyahooweather".
  *
- * Auto generated 16-03-2014 23:08
+ * Auto generated 16-03-2014 23:41
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Displays the weather and forecast for your location using the Yahoo! weather API. Please read and accept the terms of use by Yahoo! (http://developer.yahoo.com/weather/) before using the plugin!',
 	'category' => 'plugin',
 	'shy' => 0,
-	'version' => '0.0.1',
+	'version' => '0.0.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -27,8 +27,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'Ulrich Barrot, Daniel Spuhler',
-	'author_email' => 't3x@macgoo.org',
+	'author' => 'Juergen Furrer',
+	'author_email' => 'juergen.furrer@gmail.com',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
@@ -42,7 +42,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:11:{s:12:"ext_icon.gif";s:4:"1c8c";s:17:"ext_localconf.php";s:4:"f24e";s:14:"ext_tables.php";s:4:"a958";s:28:"ext_typoscript_constants.txt";s:4:"d41d";s:24:"ext_typoscript_setup.txt";s:4:"b063";s:12:"flexform.xml";s:4:"289e";s:16:"locallang_db.xml";s:4:"bb25";s:35:"pi1/class.tx_jfyahooweather_pi1.php";s:4:"1c08";s:32:"pi1/class.yahoo_api_resolver.php";s:4:"50e1";s:17:"pi1/locallang.xml";s:4:"e8de";s:22:"template/template.html";s:4:"231f";}',
+	'_md5_values_when_last_written' => 'a:11:{s:12:"ext_icon.gif";s:4:"1c8c";s:17:"ext_localconf.php";s:4:"f24e";s:14:"ext_tables.php";s:4:"a958";s:28:"ext_typoscript_constants.txt";s:4:"d41d";s:24:"ext_typoscript_setup.txt";s:4:"b063";s:12:"flexform.xml";s:4:"289e";s:16:"locallang_db.xml";s:4:"bb25";s:35:"pi1/class.tx_jfyahooweather_pi1.php";s:4:"bd74";s:32:"pi1/class.yahoo_api_resolver.php";s:4:"65ba";s:17:"pi1/locallang.xml";s:4:"e8de";s:22:"template/template.html";s:4:"7bd8";}',
 	'suggests' => array(
 	),
 );

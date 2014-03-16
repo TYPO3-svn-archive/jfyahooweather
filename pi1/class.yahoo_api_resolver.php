@@ -2,7 +2,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2012 Ulrich Barrot <u.barrot@insiders-technologies.de>
+ *  (c) 2014 Juergen Furrer <juergen.furrer@gmail.com>
+ *  Based on yahooweatherwidget from Ulrich Barrot <u.barrot@insiders-technologies.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -25,7 +26,7 @@
 /**
  * Yahoo! API Helper Class for Yahoo! Weather Widget
  *
- * @author	Ulrich Barrot <u.barrot@insiders-technologies.de>
+ * @author	Juergen Furrer <juergen.furrer@gmail.com>
  * @package	TYPO3
  * @subpackage	tx_jfyahooweather
  */
