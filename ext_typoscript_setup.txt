@@ -1,0 +1,32 @@
+plugin.tx_jfyahooweather_pi1 {
+	templateFile = EXT:jfyahooweather/template/template.html
+	cacheTime = 60
+	enableCache = true
+	cleanCache = 2
+	unit = c
+	timeFormat = 24
+	dateFormat = d.m.Y
+	location = GMXX3828
+	imagePath = http://l.yimg.com/a/i/us/we/52/
+	imageExt = gif
+	timeout = 5
+}
+
+plugin.tx_jfyahooweather_pi1._CSS_DEFAULT_STYLE (
+	.jfyahooweather {
+		background: #f0f7fe;
+		padding: 0 25px;
+		width: 300px;
+	}	
+	.jfyahooweather a {
+		border: none;
+	}
+	.jfyahooweather .weatherImage {
+		width: 70px;
+		float: left;
+	}
+	.jfyahooweather .weatherText {
+		float: left;
+	}
+
+)
