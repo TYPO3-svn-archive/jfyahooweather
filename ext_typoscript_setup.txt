@@ -6,7 +6,7 @@ plugin.tx_jfyahooweather_pi1 {
 	unit = c
 	timeFormat = 24
 	dateFormat = d.m.Y
-	location = GMXX3828
+	location = 781788
 	imagePath = http://l.yimg.com/a/i/us/we/52/
 	imageExt = gif
 	timeout = 5

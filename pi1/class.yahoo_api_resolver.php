@@ -184,8 +184,8 @@ class yahooApiResolver extends tx_jfyahooweather_pi1 {
 	public function getWeatherData() {
 		$this->cleanCache();
 		if (!$this->useCache || !file_exists($this->cache_path) || @filemtime(($this->cache_path) + $this ->cachtime  < time()) || file_get_contents($this->cache_path) == "") {
-			$weather_api_url = "http://query.yahooapis.com/v1/public/yql?q=select+%2A+from+weather.forecast+where+location%3D%22".$this->location_code."%22+and+u%3D%22".$this->unit."%22&format=json";
-			$rss_api_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%27http%3A%2F%2Fxml.weather.yahoo.com%2Fforecastrss%2F".$this->location_code."_".$this->unit.".xml%27&format=json";
+			$weather_api_url = "http://query.yahooapis.com/v1/public/yql?q=select+%2A+from+weather.forecast+where+woeid%3D%22".$this->location_code."%22+and+u%3D%22".$this->unit."%22&format=json";
+			$rss_api_url = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20rss%20where%20url%3D%27http%3A%2F%2Fweather.yahooapis.com%2Fforecastrss%3Fw%3d".$this->location_code."%26u%3d".$this->unit."%27&format=json";
 
 			$data = $this->getContentFromUrl($weather_api_url);
 			$data_forecast = $this->getContentFromUrl($rss_api_url);
