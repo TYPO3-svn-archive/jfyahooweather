@@ -1,5 +1,6 @@
 plugin.tx_jfyahooweather_pi1 {
 	templateFile = EXT:jfyahooweather/template/template.html
+	removeWrapInBaseClass = 0
 	cacheTime = 60
 	enableCache = true
 	cleanCache = 2
@@ -28,5 +29,4 @@ plugin.tx_jfyahooweather_pi1._CSS_DEFAULT_STYLE (
 	.jfyahooweather .weatherText {
 		float: left;
 	}
-
 )

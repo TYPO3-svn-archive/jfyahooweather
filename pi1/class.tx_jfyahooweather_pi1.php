@@ -74,12 +74,17 @@ class tx_jfyahooweather_pi1 extends tslib_pibase {
 		$yahooapi->enableCache($this->conf["enableCache"]);
 		$api_result = $yahooapi->getWeatherData();
 		if (!$api_result) {
-			return $this->pi_wrapInBaseClass($this->renderWeather(array(),false));
+			$result = $this->renderWeather(array(),false);
 		} else {
-			return $this->pi_wrapInBaseClass($this->renderWeather($this->buildMarkerArray($api_result),true));
+			$result = $this->renderWeather($this->buildMarkerArray($api_result),true);
+		}
+		if ($conf['removeWrapInBaseClass'] == 1) {
+			return $result;
+		} else {
+			return $this->pi_wrapInBaseClass($result);
 		}
 	}
-	
+
 	/**
 	 * Application bootstrapping
 	 *
